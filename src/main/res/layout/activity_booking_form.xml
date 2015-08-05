@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MyActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:padding="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Name:"
+                android:id="@+id/textName"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editName"
+                style="@style/formInput"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Email:"
+                android:id="@+id/lblEmail"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/emailText"
+                style="@style/formInput"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Phone No.:"
+                android:id="@+id/textPhone"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editPhone"
+                style="@style/formInput"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:layout_span="2" />
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Card No.:"
+                android:id="@+id/textCard"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editCard"
+                style="@style/formInput"
+                android:imeOptions="actionNext"
+                android:layout_span="2" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="CVV No.:"
+                android:id="@+id/textCvv"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editCvv"
+                style="@style/formInput"
+                android:imeOptions="actionNext"
+                android:layout_span="2" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Card Expiry Date:"
+                android:id="@+id/textdate"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker" />
+        </TableRow>
+        <Button
+            android:id="@+id/submitButton"
+            android:text="Submit"
+            android:onClick="submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+    </TableLayout>
+</ScrollView>

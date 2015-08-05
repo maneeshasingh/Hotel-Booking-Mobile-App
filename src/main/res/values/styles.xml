@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+        <style name="Label">
+            <item name="android:textSize">14sp</item>
+        </style>
+        <style name="formLabel" >
+            <item name="android:textSize">14sp</item>
+            <item name="android:gravity">left</item>
+        </style>
+        <style name="formInput">
+            <item name="android:textSize">14sp</item>
+            <item name="android:layout_height">37dp</item>
+            <item name="android:layout_width">match_parent</item>
+        </style>
+
+</resources>

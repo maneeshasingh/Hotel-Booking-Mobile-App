@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ImageView android:id="@+id/icon"
+                android:padding="2dip"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/qr"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:maxWidth="30dp"
+                android:maxHeight="30dp"
+                ></ImageView>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/hotelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="name"
+                android:layout_marginLeft="0dp"
+                />
+        </TableRow>
+    <TableRow>
+    <TextView
+        android:id="@+id/hotelAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"
+
+        android:text="address"/>
+        <TextView
+            android:id="@+id/hotelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:text="price"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/hotelDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="40dp"
+                android:text="address"/>
+        </TableRow>
+        <TableRow>
+
+    <Button
+        android:id="@+id/Button"
+        android:text="Proceed"
+        android:onClick="proceedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        />
+
+        </TableRow>
+ </TableLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MyActivity">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:padding="10dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="To"
+            android:id="@+id/textto"
+            style="@style/formLabel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker01"
+        android:calendarViewShown="false"/>
+    </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="From"
+                android:id="@+id/textName"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker02"
+                android:calendarViewShown="false"/>
+        </TableRow>
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="No.ofGuests"
+            android:id="@+id/textGuest"
+            style="@style/formLabel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guestEdittext"
+            android:inputType="number"
+            android:layout_gravity="center_horizontal" />
+
+    </TableRow>
+        <TableRow>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox"/>
+        <TextView
+                android:text="AirPort Pickup"
+                android:id="@+id/pickup"
+                style="@style/formLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+       <Button
+        android:id="@+id/nextButton"
+        android:text="Next"
+        android:onClick="nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </TableLayout>
+      </ScrollView>
